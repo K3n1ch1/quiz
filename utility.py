@@ -1,3 +1,6 @@
+from tabnanny import check
+
+
 def goThroughQuestions(question_list,genre):
     count = 0
     for x in range(question_list[genre]['number_of_questions']):
@@ -21,6 +24,9 @@ def checkAnswer(answer, question, correct_output='', wrong_output=''):
     if answer in question['correct_answer_index']:
         print(correct_output)
         return True
+    elif answer == 'hint':
+        print(question['hint'])
+        checkAnswer(getAnswer(), question, correct_output, wrong_output)
     else:
         print(wrong_output)
         return False
