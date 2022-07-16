@@ -1,6 +1,3 @@
-from tabnanny import check
-
-
 def goThroughQuestions(question_list,genre):
     count = 0
     for x in range(question_list[genre]['number_of_questions']):
