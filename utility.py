@@ -21,7 +21,7 @@ def getAnswer():
     return answer
 
 def checkAnswer(answer, question, correct_output='', wrong_output=''):
-    if answer in question['correct_answer_index']:
+    if answer in question['correct_answer'] or answer == question['correct_answer']:
         print(correct_output)
         return True
     elif answer == 'hint':
