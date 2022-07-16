@@ -9,7 +9,8 @@ questions = {
                 '3': '1945'
             },
             'correct_answer_index': ['2'],
-            'number_question_options': 4
+            'number_question_options': 4,
+            'wrong_answer_output': 'The World War 2 started in 1939, when Hitler invaded Poland'
         },
         'test_question1': {
             'question': 'What year WWI started?',
@@ -20,7 +21,8 @@ questions = {
                 '3': '1945'
             },
             'correct_answer_index': ['0'],
-            'number_question_options': 4
+            'number_question_options': 4,
+            'wrong_answer_output': 'The World War 1 started in 1914.'
         },
         'number_of_questions': 2
         

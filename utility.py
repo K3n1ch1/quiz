@@ -2,7 +2,7 @@ def goThroughQuestions(question_list,genre):
     count = 0
     for x in range(question_list[genre]['number_of_questions']):
         printQuestion(question_list[genre][f'test_question{x}'])
-        if checkAnswer(getAnswer(), question_list[genre][f'test_question{x}'],"Correct", "wrong" ):
+        if checkAnswer(getAnswer(), question_list[genre][f'test_question{x}'],"Correct", question_list[genre][f'test_question{x}']['wrong_answer_output'] ):
             count = count + 1
     print()
     return count
